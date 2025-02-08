@@ -32,7 +32,7 @@ function Signup() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/signup",
+        "https://zerodha-clone-9nk7.onrender.com/signup",
         {
           ...inputValue,
         },
