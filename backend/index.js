@@ -116,12 +116,6 @@ app.post("/signup",async(req,res,next)=>{
 });
 app.post("/login",async(req,res,next)=>{
     try {
-        res.cookie("test_cookie", "test_value", {
-            httpOnly: true,
-            secure: true,
-            sameSite: "None",
-        });
-        
         const {email,password}=req.body;
         if(!email || !password){
             return res.json({message: "All fields are required"});
