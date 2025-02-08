@@ -15,9 +15,12 @@ const url=process.env.MONGO_URL;
 const app=express();
 
 app.use(cors({
-    origin: "https://eclectic-banoffee-9fca26.netlify.app/",
-    credentials: true, // Allow cookies and authentication headers
-  }));
+    origin: "https://splendid-tulumba-84fe06.netlify.app", // Remove trailing slash
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    allowedHeaders: ["Content-Type", "Authorization"],
+    credentials: true
+}));
+
 app.use(express.json());
 
 
