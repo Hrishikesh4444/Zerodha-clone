@@ -13,7 +13,7 @@ function Navbar() {
   const handleLogout = async () => {
     try {
       const response = await axios.post(
-        "https://zerodha-clone-9nk7.onrender.com/logout",
+        "https://zerodha-clone-yw27.onrender.com/logout",
         {},
         { withCredentials: true }
       );
