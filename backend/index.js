@@ -133,8 +133,9 @@ app.post("/login",async(req,res,next)=>{
             httpOnly: true,
             secure: true,
             sameSite: "None",
-          });
-          
+            domain: "https://zerodha-clone-s5ji.onrender.com",
+        });
+        
         res.status(201).json({ message: "User logged in successfully", success: true });
         next()
     } catch (error) {
