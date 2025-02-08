@@ -33,7 +33,7 @@ function Login() {
     e.preventDefault();
     try {
       const { data } = await axios.post(
-        "http://localhost:3000/login",
+        "https://zerodha-clone-9nk7.onrender.com/login",
         {
           ...inputValue,
         },
