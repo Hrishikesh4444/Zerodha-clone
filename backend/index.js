@@ -15,7 +15,7 @@ const url=process.env.MONGO_URL;
 const app=express();
 
 app.use(cors({
-    origin: "http://localhost:5173", // Allow your frontend domain
+    origin: "https://eclectic-banoffee-9fca26.netlify.app/",
     credentials: true, // Allow cookies and authentication headers
   }));
 app.use(express.json());
