@@ -6,7 +6,7 @@ import axios from "axios";
 const Orders = () => {
   const [allOrders, setAllOrders] = useState([]);
   useEffect(() => {
-    axios.get("https://zerodha-clone-yw27.onrender.com/allOrders").then((res) => {
+    axios.get("https://zerodha-clone-s5ji.onrender.com/allOrders").then((res) => {
       setAllOrders(res.data);
     });
   });
