@@ -15,10 +15,10 @@ const url=process.env.MONGO_URL;
 const app=express();
 
 app.use(cors({
-    origin: "https://splendid-tulumba-84fe06.netlify.app", // Remove trailing slash
+    origin: true, // Reflects the request's origin dynamically
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"],
-    credentials: true
+    credentials: true // Allows cookies and authentication headers
 }));
 
 app.use(express.json());
